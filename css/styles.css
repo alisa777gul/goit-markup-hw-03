@@ -26,12 +26,47 @@ button:focus {
 
 ul, ol{
 list-style-type: none;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+
+h1,h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img{
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+ padding-left: 15px;
+        padding-right:15px;
+       margin: 0 auto;
 }
 
 .header {
 font-family: "Roboto", sans-serif;
+padding-top: 24px;
+padding-bottom: 24px;
+
 }
    
+.navigation{
+    display: flex;
+    flex-grow: 1;
+  
+}
+
+.navigation-list{
+display: flex;
+gap:40px;
+margin-left: auto;
+margin-right: 332px;
+}
+
 .navigation-title {font-family: "Raleway", sans-serif;
     font-weight: 700;
         font-size: 18px;
@@ -60,9 +95,19 @@ font-weight: 700;
 
 .address{
     font-style: normal;
+ 
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
 }
 
 
+.list-address{
+    display: flex;
+gap: 40px;
+}
 
 .list-address-element { 
     font-size: 16px;
@@ -84,7 +129,7 @@ font-weight: 700;
 
 .solutions{
     background-color: #2e2f42;
-    
+ 
 }
 
 .solutions-title {
@@ -94,9 +139,13 @@ font-weight: 700;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+        max-width: 496px;
+        margin: 0 auto;
+       
 }
 
 .button-order {
+    display: block;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
         font-size: 16px;
@@ -104,6 +153,14 @@ font-weight: 700;
         letter-spacing: 0.04em;
         color: #fff;
         background: #4d5ae5;
+        border-radius: 4px;
+        padding: 16px 32px;
+        width: 169px;
+            height: 56px;
+      margin-left: auto;
+      margin-right: auto;
+        margin-top: 48px;
+        white-space: nowrap;
 }
 
 .button-order:hover,
@@ -111,22 +168,41 @@ font-weight: 700;
 background-color:#404BBF;
 }
 
-.features-list-name { font-weight: 500;
+.features-title{
+    display: none;
+}
+
+.features-list{
+    display: flex;
+    gap: 24px;
+    width: calc((100% - 3*24)/4);
+}
+
+.features-list-name { 
+
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
     }
 
 .features-list-text { 
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;}
+    color: #434455;
+
+}
 
 .team {
     background-color: #f4f4fd; ;
    
+}
+
+.team-list{
+    display: flex;
 }
 
 .team-list-element{
@@ -208,4 +284,9 @@ background-color:#404BBF;
     text-transform: uppercase;
   color: #f4f4fd;
 
+}
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
