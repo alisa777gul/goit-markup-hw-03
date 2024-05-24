@@ -51,10 +51,11 @@ main {
 }
 
 .container {
-    max-width: 1158px;
- padding-left: 15px;
+        max-width: 1158px;
+        margin: 0 auto;
+        padding-left: 15px;
         padding-right:15px;
-       margin: 0 auto;
+       
 }
 
 .section{
@@ -79,7 +80,7 @@ border-bottom: 1px solid #e7e9fc;
 display: flex;
 gap:40px;
 margin-right: auto;
-
+padding: 24px 0;
 
 }
 
@@ -242,7 +243,7 @@ padding: 32px 0;
 
 .team-list-element{
     background-color: #fff;
- border-radius: 0 0 4px 4px; 
+     border-radius: 0 0 4px 4px; 
     flex-basis: calc((100% - 72px) / 4);
     
 }
@@ -315,7 +316,7 @@ margin-bottom: 8px;
 }
 
 .portfolio-list-element{
-    border-bottom:  1px solid #e7e9fc ;
+    border:  1px solid #e7e9fc ;
 
         flex-basis: calc((100% - 2*24px) / 3);
 }
